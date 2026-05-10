@@ -204,7 +204,7 @@ let ampm = document.getElementById("ampm").value;
 let people = document.getElementById("people").value;
 let address = document.getElementById("address").value;
 let details = document.getElementById("details").value;
-if(name===""||event===""||date===""||time===""||ampm===""||people===""||address===""){
+if(name===""||event===""||date===""||time===""||people===""||address===""){
 alert("Please fill all required fields!");return;}
 let message = `New Booking:%0AName: ${name}%0AEvent: ${event}%0ADate: ${date}%0ATime: ${time} ${ampm}%0APeople: ${people}%0AAddress: ${address}%0ADetails: ${details}`;
 let bookings = JSON.parse(localStorage.getItem("bookings")) || [];
